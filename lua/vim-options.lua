@@ -11,3 +11,6 @@ vim.g.mapleader = " "
 vim.cmd("set number")
 vim.cmd("set relativenumber")
 
+-- Enable virtual warnings/errors
+vim.diagnostic.config({ virtual_text = true })
+
