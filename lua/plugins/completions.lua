@@ -87,9 +87,7 @@ return {
 				"gopls",
 			}
 			for _, value in ipairs(lsp_servers) do
-				require("lspconfig")[value].setup({
-					capabilities = capabilities,
-				})
+        vim.lsp.config(value, {capabilities = capabilities})
 			end
 		end,
 	},
