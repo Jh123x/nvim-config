@@ -21,3 +21,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     vim.lsp.buf.format({ async = false, bufnr = args.buf })
   end,
 })
+
+-- Add copy to clipboard
+vim.o.clipboard = "unnamedplus"
