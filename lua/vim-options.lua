@@ -24,3 +24,10 @@ vim.api.nvim_create_autocmd("BufWritePre", {
 
 -- Add copy to clipboard
 vim.o.clipboard = "unnamedplus"
+
+-- Add Go file formats
+vim.filetype.add({
+  extension = {
+    tmpl = 'gotmpl',
+  },
+})
