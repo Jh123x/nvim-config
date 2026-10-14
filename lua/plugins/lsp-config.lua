@@ -14,8 +14,8 @@ return {
       "neovim/nvim-lspconfig",
     },
     config = function()
-      vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
-      vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, {})
+      vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'LSP Rename' })
+      vim.keymap.set('n', '<leader>gd', vim.lsp.buf.definition, { desc = 'LSP Go to definition' })
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
     end,
   },
